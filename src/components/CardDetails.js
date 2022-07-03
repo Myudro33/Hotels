@@ -102,7 +102,7 @@ setTimeout(() => {
              <h1>{hotelInfo[0]?.amenities[0].listItems[0].heading}</h1>
              <ul>
                {hotelInfo[0]?.amenities[0].listItems[0].listItems.map((items) => (
-                 <li>{items}</li>
+                 <li key={Math.random()} >{items}</li>
                ))}
              </ul>
            </div>
@@ -110,7 +110,7 @@ setTimeout(() => {
              <h1>{hotelInfo[0]?.amenities[0].listItems[1].heading}</h1>
              <ul>
                {hotelInfo[0]?.amenities[0].listItems[1].listItems.map((items) => (
-                 <li>{items}</li>
+                 <li key={Math.random()}>{items}</li>
                ))}
              </ul>
            </div>
@@ -120,7 +120,7 @@ setTimeout(() => {
              <h1>{hotelInfo[0]?.amenities[0].listItems[2].heading}</h1>
              <ul>
                {hotelInfo[0]?.amenities[0].listItems[2].listItems.map((items) => (
-                 <li>{items}</li>
+                 <li key={Math.random()}>{items}</li>
                ))}
              </ul>
            </div>
@@ -128,7 +128,7 @@ setTimeout(() => {
              <h1>{hotelInfo[0]?.amenities[0].listItems[5]?.heading}</h1>
              <ul>
                {hotelInfo[0]?.amenities[0].listItems[5]?.listItems.map((items) => (
-                 <li>{items}</li>
+                 <li key={Math.random()}>{items}</li>
                ))}
              </ul>
            </div>
@@ -140,7 +140,7 @@ setTimeout(() => {
          <h1>Hygiene</h1>
          <ul>
            {hotelInfo[0]?.hygiene?.map((item) => (
-             <li>{item}</li>
+             <li key={Math.random()}>{item}</li>
            ))}
          </ul>
        </div>
@@ -148,7 +148,7 @@ setTimeout(() => {
          <h1>{hotelInfo[0]?.overview[1].title}</h1>
          <ul>
            {hotelInfo[0]?.overview[1].content.map((item) => (
-             <li>{item}</li>
+             <li key={Math.random()}>{item}</li>
            ))}
          </ul>
        </div>
@@ -156,7 +156,7 @@ setTimeout(() => {
          <h1>{hotelInfo[0]?.overview[2].title}</h1>
          <ul>
            {hotelInfo[0]?.overview[2].content.map((item) => (
-             <li>{item}</li>
+             <li key={Math.random()}>{item}</li>
            ))}
          </ul>
        </div>
@@ -170,10 +170,10 @@ setTimeout(() => {
        <div>
          <ul>
            {transportation[0]?.transportation[0]?.locations.map((airport)=>(
-             <li>{`From ${airport?.name} ${airport?.distanceInTime}`}</li>
+             <li key={Math.random()}>{`From ${airport?.name} ${airport?.distanceInTime}`}</li>
            ))}
            {transportation[0]?.transportation[1]?.locations.map((station)=>(
-             <li>{`From ${station?.name} ${station?.distanceInTime}`}</li>
+             <li key={Math.random()}>{`From ${station?.name} ${station?.distanceInTime}`}</li>
            ))}
          </ul>
        </div>
