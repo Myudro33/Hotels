@@ -1,7 +1,7 @@
 export const searchOptions = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'b517131659mshb9b53049dc06d0bp1db4a0jsnce8361645c2e',
+		'X-RapidAPI-Key': '2e3698912fmsh05b5795bb64bfedp1bf372jsn9e991a24ced2',
 		'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
 	}
 };
